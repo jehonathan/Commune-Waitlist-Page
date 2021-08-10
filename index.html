@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--header section-->
+    <header class="header" id="page__header">
+        <div class="container">
+            <nav id="menu" class="main__nav">
+                <a href="index.html" class="logo"><img src="./Assets/Logo.svg" alt=""></a>
+                <div class="menu__toggle" id="toggle__menu">
+                    <img src="./Assets/Hamburger Menu.svg" alt="">
+                </div>
+                <div class="menu__dropdown">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#" class="nav-link">features</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">affiliates</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">pricing</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">communities</a></li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link btn signup__btn">join waitlist</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--End of header section-->
+    <main id="main">
+        <section class="hero__section">
+            <div class="container row">
+                <div class="hero__content__left">
+                    <p class="p__bg">We are now allowing early-access for users. <a href="#" class="bg__link"> Learn more.</a></p>
+
+                    <div class="hero__left__title">
+                        <h1 class="main__title">Build a highly engaged community with no effort.</h1>
+                        <p class="title__para">Commune offers the tools you need to build a highly engaged community with little to no effort. Simply setup your Commune workspace, and manage everything from members to content from one central dashboard.</p>
+                    </div>
+                    <div class="hero__btn">
+                        <input type="email" placeholder="Enter your e-mail address">
+                        <a href="#" class="btn">Join Waitlist</a>
+                    </div>
+                    <div class="companies">
+                        <p>Used by these companies:</p>
+                        <ul class="company__icon">
+                            <li class="icon__item">
+                                <a href="#" class="icon__link"><img src="./Assets/Atlassian Icon.svg" alt=""></a>
+                            </li>
+                            <li class="icon__item">
+                                <a href="#" class="icon__link"><img src="./Assets/Behance Icon.svg" alt=""></a>
+                            </li>
+                            <li class="icon__item">
+                                <a href="#" class="icon__link"><img src="./Assets/Bing Icon.svg" alt=""></a>
+                            </li>
+                            <li class="icon__item">
+                                <a href="#" class="icon__link"><img src="./Assets/Bitbucket Icon.svg" alt=""></a>
+                            </li>
+                            <li class="icon__item">
+                                <a href="#" class="icon__link"><img src="./Assets/Dropbox Icon.svg" alt=""></a>
+                            </li>
+                            <li class="icon__item">
+                                <a href="#" class="icon__link"><img src="./Assets/Twitch Icon.svg" alt=""></a>
+                            </li>
+                            <li class="icon__item">
+                                <a href="#" class="icon__link"><img src="./Assets/Twitter Icon.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hero__content__right">
+                    <img src="./Assets/Illustration.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script type="text/javascript">
+        (function() {
+            let menuToggle = document.querySelector('.menu__toggle');
+            menuToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                let menu = document.querySelector('.main__nav');
+                menu.classList.toggle('is__open');
+            });
+        })();
+    </script>
+</body>
+
+</html>
